@@ -1,0 +1,15 @@
+.clickandpick-menu{
+    padding-top: 2vh;
+    padding: 1vh 1vh;
+    color: #36454F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:normal;
+    font-size: 14px;
+    width:70%;
+    text-align: center;
+}
+a{
+    text-decoration: none;   
+    padding: 0 10px; 
+    color: #28282B;
+}

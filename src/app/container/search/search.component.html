@@ -1,0 +1,7 @@
+<div class="clickandpick--search--product">
+    <input class="clickandpick-search-product-input" [(ngModel)]="searchText">
+    <button class="btn btn-search" >Search</button>
+</div>
+<div class="clickandpick-search-result-for">
+    <p *ngIf=" searchText != ''"><strong>Search result for:</strong>{{searchText}}</p>
+</div>
