@@ -24,6 +24,14 @@
     color:#fff;
 }
 
+.btn-search-disabled{
+    padding: 12px 30px;
+    background-color: #aaa;
+    color : #999;
+    border : #aaa 1px solid;
+    margin-left: -1px;
+    cursor : not-allowed;
+}
 .clickandpick-search-result-for{
     margin: 20px auto;
     padding: 10px 140px;

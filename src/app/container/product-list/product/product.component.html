@@ -1,0 +1,20 @@
+<div class="clickandpick--product--item">
+    <div class="clickandpick-wishlist-sale-container">
+        <div class="clickandpick--add--to--wishlist">
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        </div>
+        <div class="clickandpick-on-sale-tag" *ngIf="product.discountPrice">{{(100 - (product.discountPrice / product.price * 100)).toFixed(0) }}% OFF</div>
+    </div>
+    <div class="clickandpick--product--image">
+        <img [src]="product.imageURL" class="clickandpick--product--image" alt="shoe">
+    </div>
+    <div class="clickandpick--add--to--price">
+        {{product.price}}
+    </div>
+    <div class="clickandpick--product--name">{{product.name}}</div>
+    <div class="clickandpick--product--category">{{product.gender}} . {{product.category}} . {{product.brand}}</div>
+    <div class="clickandpick--product--available-colors">${{product.color.length}} Colors . Best Seller</div>
+    <div class="clickandpick--product--in--stock" [ngStyle]="{fontWeight : 'bold', color : product.is_in_inventory ?  'Green' : 'Red'}">
+        {{product.is_in_inventory ? "Available in stock" : "Sold Out"}}
+    </div>
+</div>
